@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+}
+
+.background-game {
+  background-image: url(assets/fundo.svg);
+
+  width: 1440px;
+  height: 1024px;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  grid-template-columns: fit-content(50%) fit-content(50%) fit-content(50%) fit-content(
+      50%
+    );
+  grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%);
+
+  gap: 54px;
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.toupeira {
+  position: relative;
+}
+
+.t4 .a1 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 50ms;
+  /* animation-iteration-count: infinite; */
+}
+
+.t4 .a2 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 150ms;
+  /* animation-iteration-count: infinite; */
+}
+
+.t4 .a3 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+
+  animation-delay: 250ms;
+  /* animation-iteration-count: infinite; */
+}
+
+.t4 .a4 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+
+  animation-delay: 350ms;
+  /* animation-iteration-count: infinite; */
+}
+
+.t4 .a5 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 450ms;
+  /* animation-iteration-count: infinite; */
+}
+
+.t6 .a1 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 2.5s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t6 .a2 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 2.15s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t6 .a3 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+
+  animation-delay: 2.25s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t6 .a4 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+
+  animation-delay: 2.35s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t6 .a5 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 2.45s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t11 .a1 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 4.5s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t11 .a2 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 4.15s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t11 .a3 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+
+  animation-delay: 4.25s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t11 .a4 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+
+  animation-delay: 4.35s;
+  /* animation-iteration-count: infinite; */
+}
+
+.t11 .a5 {
+  animation-name: toupeira;
+  animation-duration: 100ms;
+  animation-delay: 4.45s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes toupeira {
+  0% {
+    z-index: -1;
+  }
+
+  100% {
+    z-index: 2;
+  }
+}
+
+/* 4 6 e 11 */
+
+/* .background-game img:nth-child(1) {
+  grid-area: "A";
+}
+.background-game img:nth-child(2) {
+  grid-area: "B";
+}
+.background-game img:nth-child(3) {
+  grid-area: "C";
+}
+.background-game img:nth-child(4) {
+  grid-area: "D";
+}
+.background-game img:nth-child(5) {
+  grid-area: "E";
+}
+.background-game img:nth-child(6) {
+  grid-area: "F";
+}
+.background-game img:nth-child(7) {
+  grid-area: "G";
+}
+.background-game img:nth-child(8) {
+  grid-area: "H";
+}
+.background-game img:nth-child(9) {
+  grid-area: "I";
+}
+.background-game img:nth-child(10) {
+  grid-area: "J";
+}
+.background-game img:nth-child(11) {
+  grid-area: "K";
+}
+.background-game img:nth-child(12) {
+  grid-area: "L";
+} */
