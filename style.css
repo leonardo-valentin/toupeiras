@@ -34,7 +34,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 .toupeira {
@@ -42,123 +42,137 @@ body {
 }
 
 .t4 .a1 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 50ms;
-  /* animation-iteration-count: infinite; */
+  animation: toupeira2 750ms 500ms, toupeira2 1.4s 4s infinite;
 }
 
 .t4 .a2 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 150ms;
-  /* animation-iteration-count: infinite; */
+  animation: toupeira2 750ms 680ms, toupeira2 1.4s 4.1s infinite;
 }
 
 .t4 .a3 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-
-  animation-delay: 250ms;
-  /* animation-iteration-count: infinite; */
+  animation: toupeira2 750ms 780ms, toupeira2 1.4s 4.2s infinite;
 }
 
 .t4 .a4 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-
-  animation-delay: 350ms;
-  /* animation-iteration-count: infinite; */
+  animation: toupeira2 750ms 880ms, toupeira2 1.4s 4.3s infinite;
 }
 
 .t4 .a5 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 450ms;
-  /* animation-iteration-count: infinite; */
+  animation: toupeira2 750ms 980ms, toupeira2 1.4s 4.4s infinite;
 }
 
 .t6 .a1 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 2.5s;
+  animation: toupeira2 750ms 1.4s, toupeira2 1.4s 5s infinite;
+
   /* animation-iteration-count: infinite; */
 }
 
 .t6 .a2 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 2.15s;
+  animation: toupeira2 750ms 1.58s, toupeira2 1.4s 5.1s infinite;
+
   /* animation-iteration-count: infinite; */
 }
 
 .t6 .a3 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
+  animation: toupeira2 750ms 1.76s, toupeira2 1.4s 5.2s infinite;
 
-  animation-delay: 2.25s;
   /* animation-iteration-count: infinite; */
 }
 
 .t6 .a4 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
+  animation: toupeira2 750ms 1.94s, toupeira2 1.4s 5.3s infinite;
 
-  animation-delay: 2.35s;
   /* animation-iteration-count: infinite; */
 }
 
 .t6 .a5 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 2.45s;
+  animation: toupeira2 750ms 2.12s, toupeira2 1.4s 5.4s infinite;
+
   /* animation-iteration-count: infinite; */
 }
 
 .t11 .a1 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 4.5s;
+  animation: toupeira2 750ms 3s, toupeira2 1.4s 6.2s infinite;
+
   /* animation-iteration-count: infinite; */
 }
 
 .t11 .a2 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 4.15s;
+  animation: toupeira2 750ms 3.18s, toupeira2 1.4s 6.3s infinite;
+
   /* animation-iteration-count: infinite; */
 }
 
 .t11 .a3 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
+  animation: toupeira2 750ms 3.36s, toupeira2 1.4s 6.4s infinite;
 
-  animation-delay: 4.25s;
   /* animation-iteration-count: infinite; */
 }
 
 .t11 .a4 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
+  animation: toupeira2 750ms 3.54s, toupeira2 1.4s 6.5s infinite;
 
-  animation-delay: 4.35s;
   /* animation-iteration-count: infinite; */
 }
 
 .t11 .a5 {
-  animation-name: toupeira;
-  animation-duration: 100ms;
-  animation-delay: 4.45s;
+  animation: toupeira2 750ms 3.72s, toupeira2 1.4s 6.6s infinite;
+
   /* animation-iteration-count: infinite; */
 }
 
-@keyframes toupeira {
+.toupeira:hover .a1 {
+  animation: toupeira2 750ms 0.3s;
+}
+
+.toupeira:hover .a2 {
+  animation: toupeira2 750ms 0.4s;
+}
+.toupeira:hover .a3 {
+  animation: toupeira2 750ms 0.5s;
+}
+.toupeira:hover .a4 {
+  animation: toupeira2 750ms 0.6s;
+}
+.toupeira:hover .a5 {
+  animation: toupeira2 750ms 0.7s;
+}
+
+@keyframes toupeira2 {
   0% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  25% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  40% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  50% {
+    opacity: 1;
+
+    z-index: 2;
+  }
+
+  75% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  85% {
+    opacity: 0;
     z-index: -1;
   }
 
   100% {
-    z-index: 2;
+    opacity: 0;
+    z-index: -1;
   }
 }
 
